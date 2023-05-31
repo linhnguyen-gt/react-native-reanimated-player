@@ -694,7 +694,7 @@ const VideoPlayer = forwardRef<VideoPlayerRef, VideoProps>(
      *
      * @param {object} data The video meta data
      */
-     const onProgress = (data: OnProgressData) => {
+    const onProgress = (data: OnProgressData) => {
       const { currentTime: cTime } = data;
       if (!isScrubbing.value) {
         if (!isSeeking.current) {
